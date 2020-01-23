@@ -15,3 +15,4 @@ console.log(42);
 console.log(favoriteMovie);
 
 console.error("This is an error!");
+
