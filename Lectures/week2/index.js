@@ -61,6 +61,26 @@ if(subTotal > 1000)
     console.log("You get a big spender discount!");
 
 
+// Switch...Case
+console.log("SWITCH START!");
+myNumber = 42;
+switch(myNumber)
+{
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+        console.log("Less than 6");
+        break;
+    case 42:
+        console.log(42);
+        break;
+    default:
+        console.log("Default");
+}
+console.log("SWITCH END!");
+
 
 // For Loops
 let c;
@@ -77,8 +97,19 @@ for( let i in myFavoriteThings )
 
 
 // While
-// let counter = 5;
-// while( counter > 0 )
-// {
-//     console.log("Counter:", counter);
-// }
+let counter = 5;
+while( counter > 0 )
+{
+    counter--;
+    console.log("Counter:", counter);
+}
+
+
+// Do While
+let doCounter = 5;
+do
+{
+    doCounter--;
+    console.log("Do Counter:", doCounter);
+}
+while( doCounter > 0 );
