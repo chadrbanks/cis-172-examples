@@ -1,5 +1,4 @@
 # cis-172-examples
-
 This repository is used to store lecture examples for CIS-172.
 
 ## Setup
@@ -15,4 +14,4 @@ Contact me at chadrbanks@yahoo.com,
 or via our Slack channel.
 
 ## License
-All assets and code are under the MIT LICENSE and in the public domain unless specified otherwise.
+All assets and code are under the GNU General Public License v3.0 and in the public domain unless specified otherwise.
