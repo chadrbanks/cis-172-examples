@@ -1,4 +1,7 @@
 # cis-172-examples
+<a href="https://img.shields.io/badge/language-JS-red" alt="Language">
+        <img src="https://img.shields.io/badge/language-JS-red" /></a>
+
 This repository is used to store lecture examples for CIS-172.
 
 ## Setup
@@ -14,4 +17,4 @@ Contact me at chadrbanks@yahoo.com,
 or via our Slack channel.
 
 ## License
-All assets and code are under the GNU General Public License v3.0 and in the public domain unless specified otherwise.
+All assets and code are under the MIT License and in the public domain unless specified otherwise.
