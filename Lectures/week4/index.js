@@ -6,7 +6,7 @@
  * @date        2020.02.11
  **/
 
-let fridge = [];
+var fridge = [];
 
 let sayHello = function()
 {

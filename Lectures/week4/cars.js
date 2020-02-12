@@ -19,6 +19,9 @@ factory.makeCar = function()
     car.make        = document.getElementById('carMake').value;
     car.model       = document.getElementById('carModel').value;
     car.price       = document.getElementById('carPrice').value;
+    car.dashboard   = fridge[0];
+
+    fridge.shift();
 
     factory.showRoom.push(car);
     console.log(car);
