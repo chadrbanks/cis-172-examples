@@ -14,7 +14,7 @@ If you want to code against this, feel free to submit a PR.
 
 ## Contact
 Contact me at chadrbanks@yahoo.com,
-or via our [Slack channel](hfccis172.slack.com).
+or via our [Slack channel](https://hfccis172.slack.com).
 
 ## License
 All assets and code are under the MIT License and in the public domain unless specified otherwise.
