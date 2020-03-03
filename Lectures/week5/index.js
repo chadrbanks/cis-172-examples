@@ -9,6 +9,7 @@ let week5 = {
 
     myDiv: null,
     myHoverBtn: null,
+
     init: function (){
         week5.myDiv = document.getElementById('display');
 
