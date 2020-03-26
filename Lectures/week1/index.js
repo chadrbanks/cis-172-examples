@@ -1,3 +1,10 @@
+/**
+ * Week 1 - Variables, Data types, and Operators
+ *
+ * @category    Week 1
+ * @author      Chad Banks <crbanks1@hfcc.edu>
+ * @date        2020.03.26
+ **/
 
 
 let favoriteMovie = "The Matrix";

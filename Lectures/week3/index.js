@@ -1,5 +1,5 @@
 /**
- * Week 3 focuses on functions and events.
+ * Week 3 - Functions and events
  *
  * @category    Week 3
  * @author      Chad Banks <crbanks1@hfcc.edu>

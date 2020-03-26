@@ -1,5 +1,5 @@
 /**
- * Week 5 focuses on the DOM.
+ * Week 5 - Document Object Model
  *
  * @category    Week 5
  * @author      Chad Banks <crbanks1@hfcc.edu>
@@ -7,11 +7,11 @@
  **/
 let week5 = {
 
-    myDiv: null,
+    //myDiv: null,
     myHoverBtn: null,
 
     init: function (){
-        week5.myDiv = document.getElementById('display');
+        //week5.myDiv = document.getElementById('display');
 
         week5.myHoverBtn = document.getElementById('hover');
         week5.myHoverBtn.addEventListener("mouseover", week5.handleHover );
@@ -27,7 +27,9 @@ let week5 = {
     },
     updateDiv: function ( str )
     {
-        week5.myDiv.innerHTML = "<p>You did a " + str + "!</p>" + week5.myDiv.innerHTML;
+        let myDiv = document.getElementById('display');
+        myDiv.innerHTML = "<p>You did a " + str + "!</p>" + week5.myDiv.innerHTML;
+        //week5.myDiv.innerHTML = "<p>You did a " + str + "!</p>" + week5.myDiv.innerHTML;
     }
 };
 

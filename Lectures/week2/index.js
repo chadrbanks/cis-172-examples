@@ -1,4 +1,10 @@
-
+/**
+ * Week 2 - Strings and Control Structures
+ *
+ * @category    Week 2
+ * @author      Chad Banks <crbanks1@hfcc.edu>
+ * @date        2020.03.26
+ */
 
 // String Stuff
 let myName = "Rick";

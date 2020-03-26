@@ -1,4 +1,10 @@
-
+/**
+ * Week 6 - Debugging and Error Handling
+ *
+ * @category    Week 6
+ * @author      Chad Banks <crbanks1@hfcc.edu>
+ * @date        2020.03.26
+ **/
 
 let myObj = {
 
@@ -41,9 +47,6 @@ let myObj = {
             console.error("Site is down!");
         }
     }
-}
-
-
-
+};
 
 window.onload = myObj.init;
