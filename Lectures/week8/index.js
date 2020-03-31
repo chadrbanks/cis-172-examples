@@ -9,7 +9,7 @@ let week8 = {
 
     init: function (){
         let myBtn = document.getElementById('bgcolor');
-        myBtn.addEventListener( 'click', week8.updateColor )
+        myBtn.addEventListener( 'click', week8.updateColor );
     },
     updateColor: function (  )
     {

@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Week 9</title>
+        <script src="index.js" ></script>
+    </head>
+    <body>
+        <h1>Week 9 : Validating Form Data</h1>
+
+        <form action="index.html" method="GET" >
+            <label for="contactName" >Your Name:</label>
+            <input type="text" id="contactName" name="contactName" placeholder="Enter name" >
+
+            <br><br>
+
+            <label for="contactEmail" >Email:</label>
+            <input type="email" id="contactEmail" name="contactEmail" placeholder="Enter email" >
+
+            <br><br>
+
+            <label for="contactZip" >Zip:</label>
+            <input type="number" id="contactZip" name="contactZip" placeholder="Enter zip" >
+            <br><br>
+
+            <label for="contactDate" >When To Reach You:</label>
+            <input type="datetime-local" id="contactDate" name="contactDate" >
+
+            <br><br>
+
+            <label for="contactReason" >Contact Reason:</label>
+            <select id="contactReason" name="contactReason" >
+                <option>-- Select An Option --</option>
+                <option>Deposit</option>
+                <option>Interest</option>
+                <option>Loan</option>
+                <option>Withdraw</option>
+            </select>
+
+            <br><br>
+
+            <label for="contactMessage" >Contact Message:</label>
+            <textarea id="contactMessage" name="contactMessage"></textarea>
+
+            <br><br>
+
+            <input type="submit" name="contactSubmit" value="Send Request" >
+        </form>
+    </body>
+</html>
