@@ -8,15 +8,18 @@
 
 let contactFormValidator = {
 
+    contactForm : null,
+    isValid : false,
+
     init: function (){
         console.log('Page loaded!');
 
         let contactName = document.getElementById('contactName');
         contactName.addEventListener( "blur", contactFormValidator.validateName );
 
-        let contactForm = document.getElementById('contactForm');
-        contactForm.addEventListener( "submit", contactFormValidator.validateForm );
-        console.log("Form:", contactForm);
+        contactFormValidator.contactForm = document.getElementById('contactForm');
+        contactFormValidator.contactForm.addEventListener( "submit", contactFormValidator.validateForm );
+        console.log("Form:", contactFormValidator.contactForm);
     },
     validateName : function( event )
     {
@@ -62,10 +65,11 @@ let contactFormValidator = {
             isValid = false;
         }
 
+        // New validations
 
         if( isValid )
         {
-            // Actually submit the form
+            contactFormValidator.contactForm.submit();
         }
     }
 };
