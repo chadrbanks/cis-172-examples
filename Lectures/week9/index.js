@@ -13,14 +13,62 @@ let contactFormValidator = {
 
         let contactName = document.getElementById('contactName');
         contactName.addEventListener( "blur", contactFormValidator.validateName );
+
+        let contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener( "submit", contactFormValidator.validateForm );
+        console.log("Form:", contactForm);
     },
     validateName : function( event )
     {
-        console.log("Event:", event);
-        console.log("Value?:", event.target.value);
+        let nameInput = document.getElementById('contactName');
 
-        
+        //console.log("Event:", event);
+        //console.log("Value Length:", event.target.value.length);
+
+        if(nameInput.value.length < 3)
+        {
+            // Fire error message here
+            // Example: console.error
+            // Example: Try/Catch -> throw new error('validation')
+            // Example: alert('validation error!');
+            // Example: Custom modal or pop-up (preferred)
+            alert('Name should be longer than 2 characters!');
+
+            return false;
+        }
+
+        let spaceIndex = nameInput.value.indexOf(" ");
+        //let s3Index = nameInput.value.indexOf("   ");
+
+        if( spaceIndex === -1 )
+        {
+            alert('No space error, name should be a full name!');
+
+            return false;
+        }
+
+        return true;
+
+    },
+    validateForm : function(event)
+    {
+        event.preventDefault();
+
+        // Do ALL validation
+        let isValid = true;
+
+        if( !contactFormValidator.validateName() )
+        {
+            isValid = false;
+        }
+
+
+        if( isValid )
+        {
+            // Actually submit the form
+        }
     }
 };
+
 
 window.onload = contactFormValidator.init;
