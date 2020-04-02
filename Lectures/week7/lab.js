@@ -23,6 +23,7 @@ var myObject = {
         var newText = textBox.value;
         var myH1 = document.getElementById('myH1');
         myH1.innerHTML = newText;
+        // .append( STRING );
     }
 };
 

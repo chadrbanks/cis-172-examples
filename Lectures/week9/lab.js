@@ -17,28 +17,47 @@ let myObject = {
         myObject.debugButton.addEventListener("click", myObject.checkDate );
         console.log( "button:", myObject.debugButton );
     },
-    checkDate : function()
+    checkDate : function() {
+        try {
+            console.log("Clicked!");
+
+            // Done some other stuff
+
+            let errorMessage = '<span style="color:red;">Sorry, an error occurred!</span>';
+
+            let myDate = new Date();
+            console.log('myDate:', myDate);
+            console.log('Month:', myDate.getMonth());
+        }
+        catch(e)
+        {
+            console.error(e);
+        }
+    },
+    func2 : function() {
+        try {
+            // Code....
+        }
+        catch(e)
+        {
+            console.error(e);
+        }
+    },
+    func3 : function()
     {
-        console.log("Clicked!");
+        try {
+            // Code...
+        }
+        catch(e)
+        {
+            console.error(e);
+        }
     }
 
 };
 
 
 window.onload = myObject.init;
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

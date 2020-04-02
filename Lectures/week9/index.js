@@ -28,6 +28,17 @@ let contactFormValidator = {
         //console.log("Event:", event);
         //console.log("Value Length:", event.target.value.length);
 
+        if( typeof nameInput.value !== "string" )
+        {
+            alert('Name should be a string!');
+            return false;
+        }
+
+        // dateInput.value
+        // let currentDate = new Date(  );
+        // let usersDate = new Date( dateInput.value );
+        // currentDate.getMonth() <= 11
+
         if(nameInput.value.length < 3)
         {
             // Fire error message here
