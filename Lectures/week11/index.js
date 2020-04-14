@@ -14,13 +14,11 @@ let week11 = {
     init: function ()
     {
         // COOKIE STUFF
-        //onsole.log("CM:", cookieManager);
-        //document.cookie = "username=ProfBanks";
+        // console.log("CM:", cookieManager);
         let cookies = cookieManager.getCookies();
 
         cookieManager.setCookie("email", "cbanks1@hfcc.edu", 365);
-        //setCookie("MyCookie", "42", 30);
-        //setCookie("username", "ProfBanks", 365);
+
 
         // LOCAL STORAGE STUFF
         let bgcolor = localStorage.getItem('background-color');
@@ -36,6 +34,17 @@ let week11 = {
 
         let selectBox = document.getElementById('bgcolor');
         selectBox.addEventListener('change', week11.updateColor);
+
+
+        // DATA STUFF (NOT AS PERSISTENT)
+        let div = $('#myDiv');
+        let myData = div.data();
+        console.log("myDiv Data:", myData);
+        console.log("Movie:", myData.movie);
+        div.append(myData.movie);
+
+        div.attr("data-cheese", "Provolone");
+        console.log("div:", div)
     },
     updateColor : function(event)
     {
